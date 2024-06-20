@@ -1,0 +1,149 @@
+<div id="tab">
+  <h2 id="titleform">REGISTRATION FORM</h2>
+</div>
+
+
+
+<div class="main">
+  <div class="form">
+    <form [formGroup]="registrationForm">
+
+
+
+      <div class="formarea">
+        <label>First Name:*</label>
+        <br>
+        <input
+          [class.is-invalid]="registrationForm.get('firstName')?.invalid && registrationForm.get('firstName')?.touched "
+          formControlName="firstName" type="text" class="controls">
+      </div>
+      <div *ngIf="registrationForm.get('firstName')?.valid || registrationForm.get('firstName')?.touched ">
+        <small *ngIf="registrationForm.get('firstName')?.errors?.required" class="error">First Name is
+          required</small>
+        <small *ngIf="registrationForm.get('firstName')?.errors?.minlength" class="error">First Name must be atleast
+          3 characters</small>
+
+      </div>
+
+      <div class="formarea">
+        <label>Last Name:*</label>
+        <br>
+        <input
+          [class.is-invalid]="registrationForm.get('lastName')?.invalid && registrationForm.get('lastName')?.touched "
+          formControlName="lastName" type="text" class="controls">
+      </div>
+      <div *ngIf="registrationForm.get('lastName')?.valid || registrationForm.get('lastName')?.touched ">
+        <small *ngIf="registrationForm.get('firstName')?.errors?.required" class="error">Lastname is
+          required</small>
+        <small *ngIf="registrationForm.get('lastName')?.errors?.minlength" class="error">Lastname must be atleast 3
+          characters</small>
+
+      </div>
+
+      <div class="formarea">
+        <label>Username:*</label>
+        <br>
+        <input
+          [class.is-invalid]=" registrationForm.get('userName')?.invalid && registrationForm.get('userName')?.touched "
+          formControlName="userName" type="text" class="controls">
+      </div>
+
+      <div *ngIf="registrationForm.get('userName')?.valid || registrationForm.get('userName')?.touched">
+        <small *ngIf="registrationForm.get('userName')?.errors?.required" class="error">User Name is
+          required</small>
+          <small *ngIf="registrationForm.get('userName')?.errors?.DuplicateUser" class="error">Duplicate username</small>
+          
+      </div>
+
+      <div class="formarea">
+        <label>Password:*</label>
+        <br>
+        <input
+          [class.is-invalid]=" registrationForm.get('password')?.invalid && registrationForm.get('password')?.touched"
+          formControlName="password" type="password" class="controls">
+
+        <div *ngIf=" registrationForm.get('password')?.valid || registrationForm.get('password')?.touched">
+          <small *ngIf="registrationForm.get('password')?.errors?.required" class="error"> Password is
+            Required</small>
+          <small *ngIf="registrationForm.get('password')?.errors?.pattern" class="error"> Only Alphanumeric Values
+            accepted</small>
+          <small *ngIf="registrationForm.get('password')?.errors?.minlength" class="error"> Password must be of
+            atleast 8 characters</small>
+        </div>
+      </div>
+
+      <div class="formarea">
+        <label>Confirm Password:*</label>
+        <br>
+        <input [class.is-invalid]="registrationForm.errors?.misMatch" formControlName="confirmPassword" type="password"
+          class="controls">
+        <small *ngIf="registrationForm.errors?.misMatch" class="error"> Passwords do not match</small>
+      </div>
+
+
+      <div class="formarea">
+        <label>D.O.B:*</label>
+        <br>
+        <input [class.is-invalid]=" registrationForm.get('dob')?.invalid && registrationForm.get('dob')?.touched "
+          formControlName="dob" type="date" class="controls">
+      </div>
+
+      <div *ngIf="registrationForm.get('dob')?.valid || registrationForm.get('dob')?.touched">
+        <small *ngIf="registrationForm.get('dob')?.errors?.required" class="error">DOB is required</small>
+      </div>
+
+
+      <div>
+        <label>Gender:*</label> &nbsp;
+        <input [class.is-invalid]="registrationForm.get('dob')?.invalid && registrationForm.get('dob')?.touched "
+          type="radio" formControlName="gender" value="male"> Male
+        <input type="radio" formControlName="gender" value="female"> Female
+        <input type="radio" formControlName="gender" value="Other"> Other
+      </div>
+      <div *ngIf=" registrationForm.get('gender')?.valid || registrationForm.get('gender')?.touched ">
+        <small *ngIf="registrationForm.get('gender')?.errors?.required" class="error">Gender is required</small>
+      </div>
+
+      <div class="buttondiv">
+        <button class="button" type="submit" (click)="addUser()" [disabled]="!registrationForm.valid">SUBMIT</button>
+        <button class="button" type="reset" (click)="reset()">RESET</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+
+<br><br>
+<h3>User Details</h3>
+<div class="tableframe">
+  <table align="center" class="table" id="tableid" cellpadding="1px">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th> Action</th>
+
+      </tr>
+    </thead>
+    <tr *ngFor="let list of ListUser let i = index" class="tabledata" (click)="ClickedRow(i)"
+      [class.active]="i == HighlightRow">
+      <td>{{list.id}}</td>
+      <td>{{list.firstName}}</td>
+      <td>{{list.lastName}}</td>
+
+      <td>
+        <button class="button" (click)="edit(list.id)"> Edit</button>
+        <button class="button" (click)="delete(list.id)"> Delete</button>
+
+
+      </td>
+    </tr>
+
+
+
+    <tbody></tbody>
+
+  </table>
+</div>

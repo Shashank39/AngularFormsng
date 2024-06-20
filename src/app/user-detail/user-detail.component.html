@@ -1,0 +1,32 @@
+<div id="Comp">
+  <h3 >Registration List</h3>
+  </div>
+
+<div class="tableframe">
+<table align="center" class="table" id="tableid" cellpadding="1px">
+  <thead>
+   <tr class="heading">
+       <th>Id</th>
+       <th>Full Name</th>
+       <th >UserName</th>
+       <th >D.O.B</th>
+       <th >GENDER</th>
+       <th>Action</th>
+
+   </tr>
+</thead>
+<tr *ngFor="let list of ListUser; let i = index" (click)="ClickedRow(i)" [class.active]="i == HighlightRow">
+<td>{{list.id}}</td>
+<td>{{list.firstName | formPipe :list.lastName | uppercase}}</td>
+<td>{{list.userName}}</td>
+<td>{{list.dob}}</td>
+<td>{{list.gender}}</td>
+<td>
+  <button class="button" (click)="edit(list.id)"> Edit</button>
+  <button class="button" (click)="delete(list.id)"> Delete</button>
+
+
+</td>
+</tr>
+</table>
+</div>

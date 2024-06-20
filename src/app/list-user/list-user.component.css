@@ -1,0 +1,164 @@
+
+#tab {
+  height: 80px;
+  border-radius: 10px;
+  background-color: rgb(214, 207, 243);
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 40px;
+}
+#titleform {
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Times New Roman';
+  font-size: 35px;
+
+}
+.container-fluid{
+  margin-bottom: 100px;
+}
+.form-group{
+  margin-bottom: 20px;
+  align-self: auto;
+}
+
+.tableframe{
+  margin-right: 15px;
+  border: 2px solid ;
+  margin:15px;
+  text-align: center;
+ background-color: rgb(214, 207, 243);
+  border-radius: 10px;
+  padding: 10px;
+}
+.table {
+
+  border: 2px solid ;
+
+
+  margin-right: 35px;
+  text-align: center;
+ background-color: rgb(214, 207, 243);
+  border-radius: 10px;
+  }
+
+  .table th {
+  border: 2px solid;
+  background-color: rgb(180, 154, 201);
+  height: 30px;
+  width: auto;
+  text-align: left;
+  font-family: 'Times New Roman';
+
+  }
+   td {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    padding: 8px;
+    border: 1px solid;
+    width:auto;
+
+  }
+
+  tr:nth-child(odd) {
+    background-color: silver;
+  }
+
+  .table tr.active td {
+    background-color:rgb(183, 231, 171) !important;
+    color: rgb(10, 10, 10);
+  }
+
+
+  .button {
+    font-family: Montserrat-Medium;
+    background-color: #0a0a23;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    height: 35px;
+    width: 75px;
+  }
+
+
+
+
+.form{
+ margin: 15px;
+
+ width: 800px;
+ margin-left: 370px;
+ border: 1px solid #0a0a23 ;
+ padding: 15px;
+ border-radius: 10px;
+ background-color: rgb(214, 207, 243);
+
+}
+
+
+.controls{
+   width: 750px;
+   border-radius: 5px;
+
+}
+.error{
+ color: red;
+}
+h3{
+  font-size:25px;
+  font-weight: bold;
+  color:black;
+  text-align:center;
+  text-decoration: underline;
+  background-color: rgb(214, 207, 243);
+  width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   .table td {
+  display: inline block;
+  position: relative;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+
+  .table  td:hover{
+  position: absolute;
+  background-color:black;
+  color:white;
+  z-index: 1;
+  width: fit-content;
+  } */

@@ -1,0 +1,80 @@
+.tableframe {
+  margin-right: 15px;
+  border: 2px solid;
+  margin: 15px;
+  text-align: center;
+  background-color: rgb(214, 207, 243);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.table {
+
+
+  border: 2px solid;
+
+
+  margin-right: 35px;
+  text-align: center;
+  background-color: rgb(214, 207, 243);
+  border-radius: 10px;
+}
+
+.table th {
+  border: 2px solid;
+background-color: rgb(214, 207, 243);
+  height: 30px;
+  width: auto;
+  text-align: left;
+  font-family: 'Times New Roman';
+
+}
+
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid;
+}
+
+tr:nth-child(even) {
+  background-color: silver;
+}
+
+.table tr.active td {
+  background-color: red !important;
+  color: white;
+}
+
+h3{
+  font-size:25px;
+  font-weight: bold;
+  color:black;
+  text-align:center;
+  text-decoration: underline;
+  background-color: rgb(214, 207, 243);
+  width: 100%;
+
+}
+.button {
+  font-family: Montserrat-Medium;
+  background-color: #0a0a23;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 10px;
+  height: 35px;
+  width: 75px;
+}
+
+#comp {
+
+  height: 80px;
+  border-radius: 15px;
+  background-color: lightcyan;
+  margin-top: 10px;
+  margin-left: 13px;
+  margin-right: 13px;
+}

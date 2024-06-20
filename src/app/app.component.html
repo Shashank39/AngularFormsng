@@ -1,0 +1,75 @@
+<!-- <div>
+
+
+
+  <mat-toolbar class="tool">
+    <span class="tool_name">SOPRA STERIA INDIA</span>
+  </mat-toolbar>
+  <nav mat-tab-nav-bar>
+    <mat-tab label="home" routerLink="home" ></mat-tab>
+    <mat-tab label="user-details" routerLink="userdetail"></mat-tab>
+
+    <mat-tab label="list-user" routerLink="list-user"> </mat-tab>
+
+  </nav>
+</div> -->
+
+
+
+
+
+
+
+<body>
+
+ <div id="nav">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">  <a  class="navbar-brand">
+        <!-- Logo Image -->
+        <img src="https://bootstrapious.com/i/snippets/sn-nav-logo/logo.png" width="30" alt="" class="d-inline-block align-middle mr-2">
+        <!-- Logo Text -->
+        <span class="text-uppercase font-weight-bold">COMPANY</span>
+      </a>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/userdetail">User Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/list-user">List User</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+
+
+
+
+
+
+
+    <!-- <div>
+   <app-home></app-home>
+  </div>
+  <div>
+   <app-list-user></app-list-user>
+  </div> -->
+
+
+    <router-outlet></router-outlet>
+
+    <!--
+<app-navbar-component></app-navbar-component>
+<router-outlet></router-outlet> -->

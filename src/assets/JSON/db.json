@@ -1,0 +1,74 @@
+{
+  "registration_list": [
+    {
+      "id": "5450fb20-d672-4d8e-a336-22dd4e40a2a0",
+      "firstName": "Shashank",
+      "lastName": "Srivastava",
+      "userName": "shassri",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "dob": "2022-10-17",
+      "gender": "male"
+    },
+    {
+      "id": "f1ab2d21-cfec-480e-875d-9434e3560961",
+      "firstName": "Suresh",
+      "lastName": "Kumar",
+      "userName": "sureshkumar",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "dob": "2022-10-03",
+      "gender": "male"
+    },
+    {
+      "id": "6d7de6cf-01fd-47b9-8688-582bf0d33985",
+      "firstName": "Taniya",
+      "lastName": "Chauhan",
+      "userName": "taniyachauhan",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "dob": "2022-10-19",
+      "gender": "female"
+    },
+    {
+      "id": "b0ec7745-5289-454a-a900-67528aaf8026",
+      "firstName": "Gurdit",
+      "lastName": "Singh",
+      "userName": "guru",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "dob": "2022-10-09",
+      "gender": "male"
+    },
+    {
+      "id": "f845f668-3eb5-4203-b320-7a6032401ba4",
+      "firstName": "SWQJEWIJWE",
+      "lastName": "SDJKNCSDJ",
+      "userName": "ASDF",
+      "password": "12345678",
+      "confirmPassword": "1234565DF",
+      "dob": "2022-10-25",
+      "gender": "male"
+    },
+    {
+      "id": "73a3c84c-d3a3-4e3c-9589-aecff9f3ecea",
+      "firstName": "SHDY",
+      "lastName": "UENSK",
+      "userName": "ahsun",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "dob": "2022-10-26",
+      "gender": "male"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
